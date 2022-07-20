@@ -21,6 +21,20 @@ public class LightSaberTest {
         assertEquals(expected, actual);
 
     }
+
+     @Test
+    public void checkDefaultColorGreen(){
+        //Setup
+        LightSaber saber = new LightSaber(10);
+
+        //Enact
+        String expected = "green";
+        String actual = saber.getColor();
+
+        // Assert
+        assertEquals(expected, actual);
+    }
+    
     @Test
     public void setColorShouldUpdateColor(){
         //Setup
